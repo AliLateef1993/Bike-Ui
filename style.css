@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@200;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#container{
+    width: 100%;
+    height: 700px;
+    /* background-color: black; */
+    background-image: url(./images/bikeweb_03-Current-View.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    max-width: 90%;
+    /* border: 1px solid white; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    padding: 1rem 3rem;
+    color: #fff;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #707070;
+    cursor: pointer;
+}
+
+.nav-links li a:hover{
+    color: #51E8EF;;
+}
+
+header{
+    position: relative;
+}
+
+.heading-sec{
+    max-width: 30%;
+    /* border: 1px solid white; */
+    margin: 10rem 5rem;
+    /* position: relative; */
+}
+
+.heading-sec h2{
+    color: #fff;
+    /* margin: 0 0 -13px; */
+    line-height: 1rem;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.heading-sec h1{
+    color: #51E8EF;
+    font-size: 6rem;
+}
+
+.heading-sec p{
+    color: #fff;
+    font-weight: 100;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    margin: 1.5rem 0 0rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 20px;;
+    border: 1px solid #51E8EF;
+    background: transparent;
+    color: #fff;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.specs-sec{
+    width: 41%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red ; */
+    position: absolute;
+    left: 43%;
+    top: 135%;
+}
+
+.path1{
+    display: flex;
+}
+
+.info-1{
+    display: flex;
+    margin: 0 1rem;
+    flex-direction: column;
+}
+
+.path1 h5{
+    color: #fff;
+    font-weight: 200;
+    margin: 8px 0 0;
+}
+
+.path1 h6{
+    color: #fff;
+    font-weight: 200;
+    margin: 9px 0 0;
+}
+
+.path2{
+    display: flex;
+}
+
+.info-2{
+    display: flex;
+    margin: 0 1rem;
+    flex-direction: column;
+}
+
+.path2 h5{
+    color: #fff;
+    font-weight: 200;
+    margin: 8px 0 0;
+}
+
+.path2 h6{
+    color: #fff;
+    font-weight: 200;
+    margin: 9px 0 0;
+}
+
+.path3{
+    display: flex;
+}
+
+.info-3{
+    display: flex;
+    margin: 0 1rem;
+    flex-direction: column;
+}
+
+.path3 h5{
+    color: #fff;
+    font-weight: 200;
+    margin: 8px 0 0;
+}
+
+.path3 h6{
+    color: #fff;
+    font-weight: 200;
+    margin: 9px 0 0;
+}
+
+@media screen and (max-width: 976px){
+    #container{
+        min-height: 730px;
+    }
+
+    .specs-sec{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    #container{
+        min-height: 746px;
+    }
+    
+    .navbar{
+        width: 100%;
+        flex-direction: column; 
+    }
+
+    .logo img{
+        margin: 1rem 0 0;
+    }
+
+    .heading-sec {
+        max-width: 50%;
+        /* text-align: center; */
+    }
+
+    .specs-sec {
+        width: 62%;
+        position: absolute;
+        left: 36%;
+        top: 124%;
+    }
+
+    
+}
+
+@media screen and (max-width: 500px){
+    #container{
+        min-height: 762px;
+    }
+    
+    .specs-sec {
+        width: 70%;
+        position: absolute;
+        left: 20%;
+        top: 124%;
+}
+    .heading-sec {
+        max-width: 70%;
+        text-align: center;
+        margin: 10rem 5rem;
+    }
+
+    .btn{
+        background-color: #51E8EF;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .nav-links li{
+        font-size: 14px;
+    }
+
+    .specs-sec {
+        width: 70%;
+        position: absolute;
+        left: 20%;
+        top: 134%;
+    }
+
+}
+
+
+@media screen and (max-width: 320px){
+    .nav-links li {
+        padding: 1rem 1rem;
+        color: #fff;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+}
+
+    .nav-links li {
+        font-size: 10px;
+    }
+
+    .heading-sec {
+        max-width: 70%;
+        text-align: center;
+        margin: 10rem 3rem;
+    }
+
+    .heading-sec h1 {
+        color: #51E8EF;
+        font-size: 4rem;
+    }
+
+    .heading-sec h2 {
+        color: #fff;
+        /* margin: 0 0 -13px; */
+        line-height: 1rem;
+        font-size: 2rem;
+    }
+    .specs-sec {
+        width: 93%;
+        position: absolute;
+        left: 5%;
+        top: 141%;
+    }
+
+    .btn {
+        padding: 0.3rem 1.3rem;
+        margin: 1.5rem 0 0rem 0;
+        font-size: 14px;
+    }    
+}
+
+@media screen and (max-width: 400px){
+    .specs-sec {
+        width: 81%;
+        position: absolute;
+        left: 12%;
+        top: 132%;
+    }
+
+    .nav-links li {
+        font-size: 8px;
+    }
+    #container {
+        min-height: 763px;
+    }
+}
